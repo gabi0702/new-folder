@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang= "he" dir="rtl">
+  <head>
+    <title>שאלון קצר להתאמה לקבוצת רוכשים</title>
+    <link rel="stylesheet" href="design.css">
+	<script src = "logic.js"></script>
+
+
+  </head>
+  <body onload="loadPage()">
+    <div class="testbox">
+      <form action="/">
+        <div class="banner">
+          <h1>הצטרפות לקבוצת רוכשים</h1>
+		  
+        </div>
+        <div class="item">
+          <p>שם</p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="שם פרטי" required/>
+            <input type="text" name="name" placeholder="שם משפחה" required/>
+          </div>
+        </div>
+        <div class="item">
+          <p>כתובת מייל</p>
+          <input type="email" id="emailInput" name="email" placeholder="נא הזן כתובת מייל" required/>
+        </div>
+        <div class="item">
+          <p>מספר טלפון</p>
+          <input type="text" id="phoneNumber" name="phone" placeholder="נא הזן מספר טלפון " required/>
+        </div>
+		<div class="question">
+			<p>אילו מוצרים מעניינים אותך?</p>
+			<div class="question-answer">
+			  <div>
+				<input type="checkbox" value="none" id="checkbox_1" name="contact1"/>
+				<label for="checkbox_1" class="checkbox"><span>כיסא</span></label>
+			  </div>
+			  <div>
+				<input type="checkbox" value="none" id="checkbox_2" name="contact2"/>
+				<label for="checkbox_2" class="checkbox"><span>כיסא</span></label>
+			  </div>
+			  <div>
+				  <input type="checkbox" value="none" id="checkbox_3" name="contact3"/>
+				  <label for="checkbox_3" class="checkbox"><span>כיסא</span></label>
+			  </div>
+			  <div>
+				  <input type="checkbox" value="none" id="checkbox_4" name="contact4"/>
+				  <label for="checkbox_4" class="checkbox"><span>כיסא</span></label>
+			  </div>
+			  <div>
+				  <input type="checkbox" value="none" id="checkbox_5" name="contact5"/>
+				  <label for="checkbox_5" class="checkbox"><span>כיסא</span></label>
+			  </div>
+			  <div>
+				  <input type="checkbox" value="none" id="checkbox_6" name="contact6"/>
+				  <label for="checkbox_6" class="checkbox"><span>כיסא</span></label>
+			  </div>
+  
+			</div>
+		  </div>
+        
+        <div class="item">
+          <p>כמה מוצרים אתה רוצה להזמין</p>
+		  	<select >
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="other">מעל 7</option>
+			</select>  
+		</div>
+		<div class="item">
+			<p> פירוט כמות המוצרים</p>
+			<textarea rows="2" placeholder="פרט כאן"></textarea>
+		  </div>
+		<div class="item">
+			<p> תאריך משוער לקבלת המוצר</p>
+			<input type="date" name="bdate"/>
+			<i class="fas fa-calendar-alt"></i>
+		  </div>
+        <!-- <div class="item">
+             
+            <div>
+              <input type="checkbox" value="none" id="checkbox_1" name="contact1"/>
+              <label for="checkbox_1" class="checkbox"><span>Phone</span></label>
+            </div>
+            <div>
+              <input type="checkbox" value="none" id="checkbox_2" name="contact2"/>
+              <label for="checkbox_2" class="checkbox"><span>Email</span></label>
+            </div>
+
+         
+        </div> -->
+        
+        <div class="question">
+          <p>מהי הדרך הטובה ביותר ליצור איתך קשר?</p>
+          <div class="question-answer">
+           <div>
+              <input type="radio" value="none" id="radio_5" name="time"/>
+              <label for="radio_5" class="radio"><span>WhatsApp</span></label>
+            </div>
+            <div>
+              <input type="radio" value="none" id="radio_4" name="time"/>
+              <label for="radio_4" class="radio"><span>שיחת טלפון</span></label>
+            </div>
+            
+            <div>
+              <input type="radio" value="none" id="radio_6" name="time"/>
+              <label for="radio_6" class="radio"><span>הודעה במייל</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p>  עיר מגורים</p>
+          <textarea rows="1" placeholder="שם העיר" required></textarea>
+        </div>
+        <div class="item">
+          <p>יש לך הערות נוספות? כתוב לנו כאן</p>
+          <textarea rows="2" placeholder="פרט כאן..."></textarea>
+        </div>
+
+        <div class="btn-block">
+          <button id="press" type="button">שליחה</button>
+		  <div id="response"></div>
+        </div>
+		
+      </form>
+    </div>
+  </body>
+</html>
+
+
+	
